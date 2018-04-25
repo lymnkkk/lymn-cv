@@ -79,7 +79,6 @@
                 position: absolute;
                 top: 5%;
                 left: 10%;
-    
             }
             #menu li{
                 float: left;
@@ -153,10 +152,7 @@
                 filter: alpha(opacity=0);
             }*/
             .info{
-               /*opacity: 1;
-                filter: alpha(opacity=100);*/
                 z-index: 1;
-                /*display: block;*/
             }
             .info .adver{
             	background: url(images/adver.jpg) center;
@@ -209,7 +205,6 @@
                 font-size: 36px;
                 font-weight: normal;
                 color: #3a3857;
-                background: red;
             }
             .education .school{
                 margin-top: 50px;
@@ -240,3 +235,30 @@
             .project ul li{
                 line-height: 30px;
             }
+
+@media (max-width: 480px) {
+    #menu{
+        font-size: 12px;
+    }
+    #menu li{
+        margin-right: 10px; 
+    }
+    .info .adver{
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+    } 
+    .info .name,.education h2{
+        font-size: 20px;
+    }
+    .info .post{
+        font-size: 16px;
+    }
+    .info .contact,.education,.skill .center,.project .center{
+        font-size: 12px;
+    }
+    .education .school,.education .center div{
+        margin-top: 15px;
+    }
+
+}

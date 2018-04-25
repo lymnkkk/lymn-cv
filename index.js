@@ -6,7 +6,7 @@ $(function(){
 	    // 村吃前一个显示的section的索引值
 	    var preIndex=0;  
 
-	   	$('#menu li').hover(function(){
+	   	$('#menu li').click(function(){
 	   		$('#menu li').attr('class','');
 	   		$(this).attr('class','present');
 
@@ -29,8 +29,6 @@ $(function(){
 	   		
 	   		pre=$('.section').eq(index);
 	   		preIndex=index;
-	   	},function(){
-
 	   	})
 
 })
