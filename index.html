@@ -3,99 +3,67 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0 minum-scale=1.0 maxnum-scale=1.0 User-scalable=no">
-	<title>Document</title>
-	<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	<title>Document</title>    
+    <script src="jquery/jquery-1.10.1.js"></script>
+    <script src="jquery/jquery.mobile-1.4.5.js"></script> 
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>    
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <script src="index.js"></script>  
 
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="fullPage.js/dist/jquery.fullpage.css">
 </head>
 <body style="overflow-x: hidden;overflow-y: hidden;">
-
-		<!-- <div id="page1">
-			<figure>l
-			<img src="images/adver.jpg" alt=""/>
-			<figcaption>
-				<p>廖敏铃</p>
-				<span class="email">843214245@qq.com</span>
-				<span></span>
-			</figcaption>
-			</figure>
-		
-		</div> -->
-
-<!-- <ul id="menu">
-    <li data-menuanchor="page1" class="active">
-        <a href="#page1">第一屏</a>
-    </li>
-    <li data-menuanchor="page2">
-        <a href="#page2">第二屏</a>
-    </li>
-    <li data-menuanchor="page3">
-        <a href="#page3">第三屏</a>
-    </li>
-    <li data-menuanchor="page4">
-        <a href="#page4">第四屏</a>
-    </li>
-</ul> -->
-<!-- 鼠标滚动换  --> 
-<ul id="menu">
-    <li class="present"><a>个人信息</a></li>
-    <li><a>教育背景</a></li>
-    <li><a>项目经验</a></li>
-    <li><a>专业技能</a></li>
-</ul>
-<div id="dowebok">
-    <div class="section info">
-        <div class="center">
-            <div class="adver"></div>
-            <div calss="title">
-                <div class="name">廖敏铃</div>
-                <div class="post">Web前端开发实习生</div>
+    <ul id="menu">
+        <li class="present"><a>个人信息</a></li>
+        <li><a>教育背景</a></li>
+        <li><a>项目经验</a></li>
+        <li><a>专业技能</a></li>
+    </ul>
+    <div id="dowebok">
+        <div class="section info">
+            <div class="center">
+                <div class="adver"></div>
+                <div calss="title">
+                    <div class="name">廖敏铃</div>
+                    <div class="post">Web前端开发实习生</div>
+                </div>
+                <div class="contact">
+                    <div class="email"><span class="icon-email"></span>843214245@qq.com</div>
+                    <div class="wechat"><span class="icon-wechat"></span>lymn4533</div>
+                    <div class="github"><span class="icon-github"></span><a href="https://github.com/lymnkkk" target="_blank">https://github.com/lymnkkk</a></div>
+                </div>            
             </div>
-            <div class="contact">
-                <div class="email"><span class="icon-email"></span>843214245@qq.com</div>
-                <div class="wechat"><span class="icon-wechat"></span>lymn4533</div>
-                <div class="github"><span class="icon-github"></span><a href="https://github.com/lymnkkk" target="_blank">https://github.com/lymnkkk</a></div>
-            </div>            
+            
         </div>
-        
-    </div>
-    <div class="section education">
-        <div class="center">
-            <h2>教育背景</h2>
-            <div class="school">广东工业大学<span>数字媒体技术</span></div>
-            <div class="time">毕业年份<span>2019</span></div>
-            <div class="course">主要课程</div>
-            <span class="course-detail">网页设计与开发，php动态网页技术，数据库原理及应用，c、c++语言基础，计算机组成原理，图像处理技术等
-            </span>
-        </div>        
-    </div>
-    <div class="section project">
-        <div class="center">
-            <ul>
-                <li>《SC小圈》基于YII2框架的博客系统，实现了登录、注册、发表、浏览博文、关注好友、评论等功能，主要负责前端和后台开发。
-                博客地址：<a href="http://dracoooo.cn/" target="_blank">http://dracoooo.cn/</a></li>
-                <li>《SC小圈》基于YII2框架的博客系统，实现了登录、注册、发表、浏览博文、关注好友、评论等功能，主要负责前端和后台开发。
-                博客地址：<a href="http://dracoooo.cn/" target="_blank">http://dracoooo.cn/</a></li>
-            </ul>
+        <div class="section education">
+            <div class="center">
+                <h2>教育背景</h2>
+                <div class="school">广东工业大学<span>数字媒体技术</span></div>
+                <div class="time">毕业年份<span>2019</span></div>
+                <div class="course">主要课程</div>
+                <span class="course-detail">网页设计与开发，php动态网页技术，数据库原理及应用，c、c++语言基础，计算机组成原理，图像处理技术等
+                </span>
+            </div>        
         </div>
-    </div>
-    <div class="section skill">
-        <div class="center">
-            <ul>
-                <li>掌握HTML(5),CSS(3),JavaScript,JQuery,有过相关开发经验</li>
-                <li>了解PHP,MySQL,YII2框架，有过相关开发经验</li>
-                <li>了解git</li>
-            </ul>
-        </div>     
-    </div>
-</div>
-
-<!-- 	<script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="libs/fullpage.js/dist/jquery.fullpage.min.js"></script> -->
-    <script src="jquery/jquery-1.10.1.js"></script>
-    <script src="index.js"></script>	
-    <script src="fullPage.js/dist/jquery.fullpage.js"></script>
-	
+        <div class="section project">
+            <div class="center">
+                <ul>
+                    <li>《SC小圈》基于YII2框架的博客系统，实现了登录、注册、发表、浏览博文、关注好友、评论等功能，主要负责前端和后台开发。
+                    博客地址：<a href="http://dracoooo.cn/" target="_blank">http://dracoooo.cn/</a></li>
+                    <li>《SC小圈》基于YII2框架的博客系统，实现了登录、注册、发表、浏览博文、关注好友、评论等功能，主要负责前端和后台开发。
+                    博客地址：<a href="http://dracoooo.cn/" target="_blank">http://dracoooo.cn/</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section skill">
+            <div class="center">
+                <ul>
+                    <li>掌握HTML(5)，CSS(3)，JavaScript，JQuery，有过相关开发经验</li>
+                    <li>了解PHP，MySQL，YII2框架，有过相关开发经验</li>
+                    <li>了解git</li>
+                </ul>
+            </div>     
+        </div>  
+    </div>  
 </body>
 </html>

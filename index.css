@@ -24,218 +24,164 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-            body{
-                background: #f3f4f7;
-                font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
-            }
-            ul{
-                list-style: none outside none;
-            }
-            a{
-                text-decoration: none;
-                color: #5f5f60;
-                cursor: pointer;
-            }
-            div,span,h1,h2,h3,ul,li,a{
-                padding: 0;
-                margin: 0;
-                border: 0;
-            }
-            div,span,ul,li{
-                box-sizing: border-box;
-            }
-            /*#menu {
-                margin: 0;
-                padding: 0;
-                position: fixed;
-                left: 10px;
-                top: 10px;
-                list-style-type: none;
-                z-index: 70;
-            }
+body{
+    background: #f3f4f7;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+ul{
+    list-style: none outside none;
+}
+a{
+    text-decoration: none;
+    color: #5f5f60;
+    cursor: pointer;
+}
+div,span,h1,h2,h3,ul,li,a{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+div,span,ul,li{
+    box-sizing: border-box;
+}
+#menu{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+#menu li{
+    float: left;
+    margin-right: 20px;
+    height: 32px;
+    line-height: 32px;
+}
+#menu li.present{
+    border-top: 2px solid #3a3857;
+    position: relative;
+    top: -2px;
 
-            #menu li {
-                float: left;
-                margin: 0 10px 0 0;
-                font-size: 14px;
-            }
+} 
+#menu li.present a{
+    color: #3a3857; 
+}  
+#menu li a:hover{
+    color: #3a3857; 
+}        
+#dowebok {
+    font: "Microsoft Yahei";
+    width: 80%;
+    height: 80%;
+    border: 1px solid #3a3857;
+    border-radius: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    
+}
+.section{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #f3f4f7;
+    z-index: -1;
+}
+.section .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background: red;*/
+    text-align: center;
+}
+.info{
+    z-index: 1;
+    color: #3a3857;
+}
+.info .adver{
+	background: url(images/adver.jpg) center;
+	width: 180px;
+	height: 180px;
+	background-size: 180px;
+	border-radius: 50%;
+	margin: 0 auto;
+} 
+.info .title{
+    text-align: center;
+}
+.info .name{
+	margin-top: 20px;
+	font-size: 36px;
+    letter-spacing: 3px;
+}
+.info .post{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.info .contact{
+    color: #5f5f60;
+    margin-top: 50px;
+    font-size: 16px;
+}
+.info .contact div{
+    line-height: 30px;
+}
+.info .contact span{
+    margin-right: 10px;
+}
+.info .icon-email:before{
+   content: "\e945";
+}
+.info .icon-wechat:before{
+   content: "\e900";
+}
+.info .icon-github:before{
+    content: "\eab0";
+}
+.education{
+    color: #5f5f60;
+    font-size: 16px;
+}
+.education h2{
+    font-size: 36px;
+    font-weight: normal;
+    color: #3a3857;
+}
+.education .school{
+    margin-top: 50px;
+}
+.education .center div{
+    margin-top: 40px;
+}
+.education span{
+    margin-left: 10px;
+    color: #3a3857;
+}
+.education .course-detail{
+    line-height: 30px;
+    display: block;
+    margin-top: 10px;
+}
+.skill .center,.project .center{
+    color: #3a3857;
+    text-align: left;
+    font-size: 16px;
+}
+.skill ul,.project ul{
+    list-style-type: disc;
+}
+.skill ul li{
+    line-height: 40px;
+}
+.project ul li{
+    line-height: 30px;
+}
 
-            #menu a {
-                float: left;
-                padding: 10px 20px;
-                background-color: #fff;
-                color: #333;
-                text-decoration: none;
-            }
-
-            #menu .active a {
-                color: #fff;
-                background-color: #333;
-            }*/
-            #menu{
-                width: 80%;
-                height: auto;
-                /*margin: 0 auto;*/
-                position: absolute;
-                top: 5%;
-                left: 10%;
-            }
-            #menu li{
-                float: left;
-                margin-right: 20px;
-                /*height: 32px;*/
-                height: 32px;
-                line-height: 32px;
-                /*border-top: 2px solid #3a3857; */
-            }
-            #menu li.present{
-                border-top: 2px solid #3a3857;
-                position: relative;
-                top: -2px;
-
-            } 
-            #menu li.present a{
-                color: #3a3857; 
-            }  
-            #menu li a:hover{
-                color: #3a3857; 
-            }        
-            #dowebok {
-                font: "Microsoft Yahei";
-                width: 80%;
-                height: 80%;
-                /*padding: 20px 0 20px 0;                */
-                /*margin: 0 auto;*/
-                border: 1px solid #3a3857;
-                border-radius: 2%;
-                /*overflow: hidden;*/
-                /*background: red;*/
-                /*text-align: center;*/
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                overflow: hidden;
-                /*background: red;*/
-                
-            }
-            .section{
-                /*text-align: center;*/
-                margin: 0 auto;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                /*filter: alpha(opacity=0);*/
-                /*display: none;*/
-                /*z-index: 0;*/
-                /*background: red;*/
-                background: #f3f4f7;
-                z-index: -1;
-
-            }
-            .section .center{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                /*background: red;*/
-                text-align: center;
-            }
-            /*.section{
-                text-align: center;
-                margin: 0 auto;
-                position: absolute;   
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                opacity: 0;
-                filter: alpha(opacity=0);
-            }*/
-            .info{
-                z-index: 1;
-            }
-            .info .adver{
-            	background: url(images/adver.jpg) center;
-            	width: 180px;
-            	height: 180px;
-				background-size: 180px;
-				border-radius: 50%;
-				margin: 0 auto;
-            } 
-            .info{
-                color: #3a3857;
-            }
-            .info .title{
-                text-align: center;
-            }
-            .info .name{
-            	margin-top: 20px;
-            	font-size: 36px;
-                letter-spacing: 3px;
-            }
-            .info .post{
-                margin-top: 10px;
-                font-size: 22px;
-            }
-            .info .contact{
-                color: #5f5f60;
-                margin-top: 50px;
-                font-size: 16px;
-            }
-            .info .contact div{
-                line-height: 30px;
-            }
-            .info .contact span{
-                margin-right: 10px;
-            }
-            .info .icon-email:before{
-               content: "\e945";
-            }
-            .info .icon-wechat:before{
-               content: "\e900";
-            }
-            .info .icon-github:before{
-                content: "\eab0";
-            }
-            .education{
-                color: #5f5f60;
-                font-size: 16px;
-            }
-            .education h2{
-                font-size: 36px;
-                font-weight: normal;
-                color: #3a3857;
-            }
-            .education .school{
-                margin-top: 50px;
-            }
-            .education .center div{
-                margin-top: 40px;
-            }
-            .education span{
-                margin-left: 10px;
-                color: #3a3857;
-            }
-            .education .course-detail{
-                line-height: 30px;
-                display: block;
-                margin-top: 10px;
-            }
-            .skill .center,.project .center{
-                color: #3a3857;
-                text-align: left;
-                font-size: 16px;
-            }
-            .skill ul,.project ul{
-                list-style-type: disc;
-            }
-            .skill ul li{
-                line-height: 40px;
-            }
-            .project ul li{
-                line-height: 30px;
-            }
-
+/*媒体查询*/
 @media (max-width: 480px) {
     #menu{
         font-size: 12px;
